@@ -1,0 +1,25 @@
+.blockList {
+  padding-bottom: 50px;
+}
+.blockList-center {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  @include phones {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 776px) {
+  .blockList-center {
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .blockList-center {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}

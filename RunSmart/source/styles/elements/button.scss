@@ -1,0 +1,58 @@
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: $primary-color;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.55s ease;
+  font-weight: 500;
+  &_header {
+    padding: 10px 19px;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    @include m {
+      margin-top: 20px;
+    }
+  }
+  &_promo {
+    margin-top: 67px;
+    padding: 19px 43px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    @include m {
+      padding: 10px;
+    }
+  }
+  &_form {
+    margin-top: 20px;
+    padding: 20px 43px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    @include m {
+      width: 100%;
+    }
+  }
+  &_catalog {
+    padding: 16px 40px;
+    font-size: 14px;
+    @include l {
+      padding: 14px;
+    }
+  }
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+  &:active {
+    background-color: darken($primary-color, 20%);
+  }
+  &:focus {
+    background-color: darken($primary-color, 10%);
+  }
+}

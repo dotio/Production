@@ -1,0 +1,123 @@
+.service {
+	background: url('../img/serviceBg.jpg') no-repeat top center/cover;
+
+	@include tablets {
+		background-position: 0 0;
+	}
+
+	@include phones {
+		background-position: 0px 0;
+	}
+
+	@include normal {
+		background-position: 30% 0px;
+	}
+
+	.container {
+		position: relative;
+		display: flex;
+
+
+	}
+
+	h3 {
+		width: 470px;
+		color: #fff;
+		line-height: 62px;
+		margin-bottom: 91px;
+
+		@include phones {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+
+		.rect-lg {
+			color: $purple;
+			background: $yellow;
+		}
+	}
+
+	p {
+		&:not(:last-child) {
+			position: relative;
+			text-indent: 20px;
+			color: #ffffff;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 32px;
+			width: 570px;
+			margin-bottom: 40px;
+
+			@include phones {
+				width: 100%;
+				font-size: 15px;
+				line-height: 1.6;
+			}
+
+			@include tablets {
+				width: 100%;
+
+			}
+
+			@include normal {
+				width: 100%;
+
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0px;
+				top: 8px;
+				width: 13px;
+				height: 13px;
+				border-radius: 50%;
+				background: $yellow;
+
+				@include phones {
+					top: 5px;
+				}
+			}
+		}
+
+		color: $yellow;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 32px;
+
+		@include phones {
+			width: 100%;
+			font-size: 15px;
+			line-height: 1.6;
+		}
+	}
+}
+
+.man {
+
+
+	@include midscreen {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	@include widescreen {
+		position: absolute;
+		right: -50px;
+	}
+
+	@include normal {
+		display: none;
+	}
+
+	@include tablets {
+		display: none;
+	}
+
+	@include phones {
+		display: none;
+	}
+
+}

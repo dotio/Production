@@ -1,0 +1,72 @@
+.navbar {
+	padding: 50px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+
+	.container {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.social {
+		@include phones {
+			display: none;
+		}
+
+		@include landscape {
+			display: none;
+		}
+	}
+
+	.navbar-logo {
+		width: 100px;
+		height: 80px;
+		display: block;
+
+		@include phones {
+			width: 60px;
+			height: 50px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+
+
+.navbar.fixed {
+	background: $dark-blue;
+	z-index: 99;
+
+	transition: all .55s ease;
+
+	.navbar-logo {
+		display: none;
+	}
+
+	.social {
+		flex-direction: row;
+
+		@include phones {
+			display: flex;
+		}
+
+		@include landscape {
+			display: flex;
+		}
+
+
+
+	}
+
+	.social-item {
+		margin-bottom: 0;
+		margin-left: 10px;
+	}
+}

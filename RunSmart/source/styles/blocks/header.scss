@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include s {
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__logo {
+    width: 250px;
+    @include m {
+      width: 150px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__official {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    @include s {
+      margin-top: 20px;
+    }
+    span {
+      font-weight: 700;
+      display: block;
+      font-size: 18px;
+      margin-top: 12px;
+      @include m {
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__phone {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    @include m {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}

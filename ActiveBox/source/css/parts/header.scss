@@ -1,0 +1,44 @@
+.header {
+	background: url('../img/banner.jpg') no-repeat center center/cover;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 100px 0;
+
+	.container {
+		text-align: center;
+
+	}
+
+
+	.btn {
+		margin-top: 40px;
+
+	}
+}
+
+.h1-white {
+	color: #ffffff;
+	text-transform: uppercase;
+
+	@include phones {
+		font-size: 30px;
+	}
+
+	@include landscape {
+		font-size: 30px;
+	}
+}
+
+.h4-white {
+	color: #ffffff;
+	margin-top: 40px;
+
+	@include phones {
+		font-size: 15px;
+	}
+
+	@include landscape {
+		font-size: 15px;
+	}
+}

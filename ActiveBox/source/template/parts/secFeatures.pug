@@ -1,0 +1,11 @@
+-var title = ["Easily Customised","Responsive Ready","Modern Design", "Clean Code", "Always Ready", "Be Happy"]
+-var icon = ['i class="fas fa-user-edit"', 'i class="fas fa-laptop"', 'i class="fas fa-gopuram"', 'i class="fas fa-laptop-code"', 'i class="fas fa-people-carry"', 'i class="far fa-smile-wink"']
+
+
+section.features#features
+	.container
+		-for(var i= 0; i < title.length; i++)
+			.features-block
+				#{icon[i]}
+				span.features-title= title[i]
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis culpa ducimus eligendi? Alias ullam excepturi optio architecto? Vitae, possimus qui.

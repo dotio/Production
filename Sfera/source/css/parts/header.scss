@@ -1,0 +1,204 @@
+.showcase {
+
+	width: 100%;
+
+
+	display: flex;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url('../img/mainBg.jpg') no-repeat;
+		background-size: cover;
+		background-position: 0 0;
+		z-index: -1;
+
+		@include normal {
+			background-position: 35% 0%;
+		}
+
+		@include tablets {
+			background-position: 30% 0px;
+		}
+
+		@include phones {
+			background-position: 40% 50%;
+		}
+
+		@include midscreen {
+			background-position: 50% 0;
+		}
+
+		@include widescreen {
+			background-position: 50% 0;
+		}
+
+		@include wl {
+			background-position: 50% 0;
+		}
+
+		@include wll {
+			background-position: 50% 0;
+		}
+
+
+
+	}
+
+	.container {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+
+
+	}
+}
+
+.showcase-content {
+	padding-top: 209px;
+	padding-bottom: 290px;
+
+	@include normal {
+		margin-top: 250px;
+		margin-bottom: 100px;
+	}
+
+	@include phones {
+		margin-bottom: 100px;
+	}
+
+	@include tablets {
+		margin-bottom: 100px;
+	}
+
+
+
+
+	h2 {
+		color: $purple;
+		font-size: 70px;
+		font-weight: 400;
+		text-transform: uppercase;
+
+		@include phones {
+			font-size: 40px;
+			line-height: 1.2;
+		}
+
+
+	}
+
+	.h2-bold {
+		font-weight: 900;
+	}
+
+	.main-text {
+		width: 400px;
+		color: $blue;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 24px;
+		font-weight: 500;
+		margin-top: 50px;
+
+		@include phones {
+			width: 100%;
+		}
+
+		.accent-text {
+			color: $purple;
+			font-weight: 700;
+		}
+
+
+
+	}
+
+	.leads {
+		display: flex;
+
+		@include phones {
+			flex-direction: column;
+			display: inline-flex;
+		}
+
+		@include tablets {
+			flex-direction: column;
+			display: inline-flex;
+		}
+	}
+
+	.lead {
+		color: #fff;
+		background: $blue;
+		font-size: 18px;
+		font-weight: 700;
+		padding: 8px 12px;
+		margin-top: 33px;
+
+		@include phones {
+			padding: 8px 10px;
+			font-size: 16px;
+
+		}
+
+		&:last-child {
+			padding: 8px 12px 8px 0px;
+
+			@include phones {
+				padding: 8px 10px;
+				margin-top: 5px;
+
+			}
+
+			@include tablets {
+				padding: 8px 10px;
+				margin-top: 5px;
+
+			}
+		}
+
+
+	}
+
+	.showcase-buttons {
+		margin-top: 65px;
+		display: flex;
+
+		@include phones {
+			flex-direction: column;
+		}
+
+		.icon-right-arrow {
+			width: 27px;
+			height: 20px;
+			fill: #fff;
+			stroke: #fff;
+			margin-left: 10px;
+			transition: all 0.25s ease;
+		}
+
+		.btnPur {
+
+
+			margin-left: 35px;
+
+			@include normal {
+				margin-left: 35px;
+			}
+
+			@include phones {
+				margin-left: 0;
+				margin-top: 30px;
+			}
+
+
+		}
+	}
+}

@@ -1,0 +1,83 @@
+@import './styles/system/_var';
+@import './styles/system/_font';
+@import './styles/system/mixin';
+@import './styles/system/_base';
+
+@import './styles/parts/nav';
+@import './styles/parts/hero';
+@import './styles/parts/single';
+@import './styles/parts/block';
+@import './styles/parts/services';
+@import './styles/parts/blockList';
+@import './styles/parts/filter';
+@import './styles/parts/about';
+@import './styles/parts/excursions';
+@import './styles/parts/footer';
+
+@import './styles/modules/button';
+@import './styles/modules/menu';
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+.section-title {
+  text-align: center;
+  margin: 30px 0;
+  h4 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  div {
+    width: 80px;
+    height: 5px;
+    margin: 0 auto;
+    background: $primaryColor;
+  }
+}
+
+.loading {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 30px;
+}
+.error {
+  @include centered;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+.empty-search {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  padding: 1rem;
+  letter-spacing: var(--mainSpacing);
+}

@@ -1,0 +1,25 @@
+.social {
+	display: flex;
+	align-items: center;
+}
+
+.social-item {
+	border: 1px solid #e8ecee;
+	padding: 10px 15px;
+	margin-right: 5px;
+	transition: all .55s ease;
+	cursor: pointer;
+
+	&:hover {
+		background: $brand-color;
+
+		.fab {
+			color: #ffffff
+		}
+
+	}
+}
+
+.social-link {
+	color: #c6cacc;
+}

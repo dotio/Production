@@ -1,0 +1,115 @@
+.btn {
+	display: inline-block;
+	color: $purple;
+	background: transparent;
+	padding: 28px 35px;
+	border-radius: 35px;
+	border: 3px solid $blue;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.25s ease;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	@include phones {
+		border-radius: 42px;
+		padding: 28px 20px;
+	}
+
+	&:hover {
+		background-color: $blue;
+		color: #fff;
+
+		.icon-right-arrow {
+			fill: #fff;
+			stroke: #fff;
+		}
+	}
+
+	&:active {
+		background-color: darken($blue, 10%);
+		color: #fff;
+
+		.icon-right-arrow {
+			fill: #fff;
+			stroke: #fff;
+		}
+	}
+
+	&:focus {
+		background-color: $blue;
+		color: #fff;
+
+		.icon-right-arrow {
+			fill: #fff;
+			stroke: #fff;
+		}
+	}
+}
+
+
+.btnPur {
+	display: inline-block;
+	color: #fff;
+	background: $blue;
+	padding: 28px 35px;
+	border-radius: 35px;
+	border: 3px solid $blue;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.25s ease;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	.icon-right-arrow {
+		fill: #fff;
+		stroke: #fff;
+	}
+
+	@include phones {
+		border-radius: 42px;
+		padding: 28px 20px;
+	}
+
+	&:hover {
+		background-color: transparent;
+		color: $purple;
+
+		.icon-right-arrow {
+			fill: $purple;
+			stroke: $purple;
+		}
+	}
+
+	&:active {
+		background-color: darken($blue, 10%);
+		color: #fff;
+
+		.icon-right-arrow {
+			fill: #fff;
+			stroke: #fff;
+		}
+	}
+
+	&:focus {
+		background-color: $blue;
+		color: #fff;
+
+		.icon-right-arrow {
+			fill: #fff;
+			stroke: #fff;
+		}
+	}
+}

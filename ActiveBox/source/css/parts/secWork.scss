@@ -1,0 +1,85 @@
+.works {
+	padding: 100px 0;
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+		@include phones {
+			grid-template-columns: 1fr;
+			grid-gap: 10px;
+		}
+	}
+}
+
+.overlay {
+	background: rgba($brand-color, .9);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity .33s ease;
+
+	.overlay-caption {
+		text-align: center;
+
+		.h5,
+		p {
+			color: #ffffff;
+		}
+
+		.h5,
+		p,
+		img {
+			transition: all .55s ease;
+		}
+
+		.h5 {
+			transform: translate3d(0, -200%, 0);
+
+
+		}
+
+		p {
+			transform: translate3d(0, 200%, 0);
+		}
+
+	}
+}
+
+.works-blok {
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #ffffff;
+
+	&:hover {
+		.overlay {
+			opacity: 1;
+		}
+
+		img {
+			transform: scale(1.2);
+			transition: transform .33s ease;
+		}
+
+		.h5,
+		p {
+			transform: translate3d(0, 0, 0);
+
+		}
+
+	}
+
+	a {
+		display: flex;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

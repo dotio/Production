@@ -1,0 +1,22 @@
+.portfolio {
+	padding: 50px 0;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.fotorama {
+	padding: 0;
+	margin: 0;
+}
+
+.fotorama__caption__wrap {
+	font-size: 15px;
+	color: #fff;
+	display: block;
+	width: 100%;
+	text-align: center;
+	background: $red;
+}

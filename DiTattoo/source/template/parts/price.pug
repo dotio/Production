@@ -1,0 +1,67 @@
+section.price#price
+	.container
+		h2 ЦЕНЫ
+		.btn-wrapper
+			a.btn(href="#")#procedure Процедура
+			a.btn(href="#")#correct Коррекция
+		.price-cards
+			.card
+				h3 ТАТУАЖ БРОВЕЙ
+				-var tech = ['Техника растушевка','Волосковая техника','Техника напыления','Микроблейдинг']
+				-var price = ['5 000', '5 000', '5 000', '5 000']
+				-for(var i= 0; i < tech.length; i++)
+					.card-body
+						.card-body__title= tech[i]
+						.card-body__price= price[i] + ' р'
+				
+
+			.card
+				h3 ТАТУАЖ ГЛАЗ
+				-var tech = ['Межресничная техника','Классическая стрелка','Стрелка в технике растушевка']
+				-var price = ['3 000', '5 000', '5 000']
+				-for(var i= 0; i < tech.length; i++)
+					.card-body
+						.card-body__title= tech[i]
+						.card-body__price= price[i] + ' р'
+
+			.card
+				h3 ТАТУАЖ ГУБ
+				-var tech = ['Контурная обводка с растушевкой','Техника акварель','Техника натюрель','"Мушка"']
+				-var price = ['5 000', '5 000', '5 000', '1 000']
+				-for(var i= 0; i < tech.length; i++)
+					.card-body
+						.card-body__title= tech[i]
+						.card-body__price= price[i] + ' р'
+
+		.price-cards
+			.card-correct
+				h3 КОРРЕКЦИЯ ТАТУАЖА БРОВЕЙ
+				-var tech = ['Техника растушевка','Волосковая техника','Техника напыления','Микроблейдинг']
+				-var price = ['2 500', '2 500', '2 500', '2 500']
+				-for(var i= 0; i < tech.length; i++)
+					.card-body
+						.card-body__title= tech[i]
+						.card-body__price= price[i] + ' р'
+				
+
+			.card-correct
+				h3 КОРРЕКЦИЯ ТАТУАЖА ГЛАЗ
+				-var tech = ['Межресничная техника','Классическая стрелка','Стрелка в технике растушевка']
+				-var price = ['2 500', '2 500', '2 500']
+				-for(var i= 0; i < tech.length; i++)
+					.card-body
+						.card-body__title= tech[i]
+						.card-body__price= price[i] + ' р'
+
+			.card-correct
+				h3 КОРРЕКЦИЯ ТАТУАЖА ГУБ
+				-var tech = ['Контурная обводка с растушевкой','Техника акварель','Техника натюрель']
+				-var price = ['2 500', '2 500', '2 500']
+				-for(var i= 0; i < tech.length; i++)
+					.card-body
+						.card-body__title= tech[i]
+						.card-body__price= price[i] + ' р'
+
+
+
+

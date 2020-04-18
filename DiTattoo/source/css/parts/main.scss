@@ -1,0 +1,79 @@
+.main {
+	padding: 50px 0;
+}
+
+h2 {
+	margin-bottom: 30px;
+
+	@include phones {
+		font-size: 18px;
+	}
+}
+
+.lead {
+	text-align: justify;
+	font-size: 15px;
+
+	@include phones {
+		text-align: left;
+		line-height: 1.6;
+		font-size: 14px;
+	}
+}
+
+.accordion {
+	margin-top: 30px;
+
+	.active {
+		color: $red;
+
+		.fas {
+			transform: rotate(180deg);
+		}
+	}
+
+	.accordion-header {
+		font-size: 20px;
+
+		@include phones {
+
+			font-size: 15px;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+
+		.fas {
+			margin-left: 10px;
+			font-size: 16px;
+			transition: .55s all ease;
+		}
+	}
+
+	.accordion-content {
+		padding: 0 0px 30px 0px;
+
+		font-size: 13px;
+		display: none;
+		line-height: 20px;
+
+		p {
+			text-indent: 10px;
+		}
+
+		.title {
+			text-indent: 0px;
+		}
+
+		span {
+			font-size: 18px;
+			margin: 15px 0 0px 0;
+			display: block;
+			color: $dark-blue;
+		}
+
+
+	}
+
+}

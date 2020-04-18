@@ -1,0 +1,40 @@
+.contact {
+	background-color: #3a3e64;
+	padding: 100px 0;
+	color: $white;
+
+	.container {
+		display: grid;
+		grid-gap: 100px;
+		margin: auto;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+		@include phones {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
+.title-contact {
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.contact-block {
+	display: flex;
+	flex-direction: column;
+
+	span {
+		margin-top: 5px;
+	}
+
+	.social {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.social-item {
+		margin: 0;
+	}
+}

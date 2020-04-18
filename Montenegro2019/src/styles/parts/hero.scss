@@ -1,0 +1,74 @@
+.defaultHero,
+.roomsHero,
+.rentaCars,
+.excursions,
+.legal,
+.me {
+  min-height: calc(100vh - 66px);
+  background: url('./images/background/monte.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roomsHero {
+  background-image: url('./images/background/apart.jpg');
+  //min-height: 60vh;
+}
+
+.rentaCars {
+  background-image: url('./images/background/rentacar.jpg');
+}
+.excursions {
+  background-image: url('./images/background/excurs.jpg');
+}
+
+.legal {
+  background-image: url('./images/background/issue.jpg');
+}
+.me {
+  background-image: url('./images/background/me.jpg');
+}
+
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: $mainWhite;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  @include container;
+  h1 {
+    font-size: 40px;
+    line-height: 2;
+  }
+  .line {
+    width: 200px;
+    height: 5px;
+    background: $primaryColor;
+    margin: 20px auto;
+  }
+  p {
+    font-size: 14px;
+    text-transform: none;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+}
+
+// @media screen and (min-width: 576px) {
+//   .banner {
+//     padding: 2rem 3rem;
+//   }
+//   .banner h1 {
+//     font-size: 3rem;
+//   }
+// }
+// @media screen and (min-width: 992px) {
+//   .banner {
+//     padding: 2rem 6rem;
+//   }
+//   .banner h1 {
+//     font-size: 4rem;
+//   }
+// }

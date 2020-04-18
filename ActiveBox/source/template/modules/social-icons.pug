@@ -1,0 +1,9 @@
+-var links = ['https://www.facebook.com', 'https://www.twitter.com', 'https://www.linkedin.com']
+-var icon = ['i class="fab fa-facebook"', 'i class="fab fa-twitter"', 'i class="fab fa-linkedin"']
+
+
+ul.social
+	-for(var i= 0; i < links.length; i++)
+		li.social-item
+			a(href= links[i]).social-link
+				#{icon[i]}

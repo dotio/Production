@@ -1,0 +1,420 @@
+.price {
+  background: url('../img/price.png') no-repeat;
+  background-size: cover;
+  background-color: $yellow;
+
+  h3 {
+    color: #fff;
+    background: $blue;
+    display: inline-block;
+    margin-bottom: 71px;
+  }
+
+  .container {
+    max-width: 1250px;
+    position: relative;
+  }
+}
+
+.price-block {
+  display: flex;
+
+  .y {
+    position: absolute;
+    right: -230px;
+    top: 90px;
+
+    @include normal {
+      display: none;
+    }
+
+    @include tablets {
+      display: none;
+    }
+
+    @include phones {
+      display: none;
+    }
+
+    @include midscreen {
+      display: none;
+    }
+
+    @include widescreen {
+      display: none;
+    }
+
+    @include wl {
+      display: none;
+    }
+  }
+
+  .man-po {
+    position: absolute;
+    left: -200px;
+
+    @include normal {
+      display: none;
+    }
+
+    @include tablets {
+      display: none;
+    }
+
+    @include phones {
+      display: none;
+    }
+
+    @include midscreen {
+      display: none;
+    }
+
+    @include widescreen {
+      display: none;
+    }
+
+    @include wl {
+      display: none;
+    }
+
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.tarifes {
+  background: #fff;
+  border-radius: 33px;
+  padding: 21px 11px 21px 0;
+  overflow: auto;
+
+  @include tablets {
+    padding: 20px 11px 20px 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    @include tablets {
+      overflow-x: scroll;
+    }
+
+    @include phones {
+      overflow-x: scroll;
+    }
+
+    @include normal {
+      overflow-x: scroll;
+    }
+
+    .icon-check-mark {
+      width: 27px;
+      height: 25px;
+      fill: $yellow;
+      stroke: $yellow;
+    }
+
+    .icon-close-cross {
+      width: 22px;
+      height: 22px;
+      fill: $purple;
+      stroke: $purple;
+    }
+
+    tbody {
+      text-align: center;
+      border-top: 2px solid $blue;
+      border-bottom: 2px solid $blue;
+      border-right: 2px solid $blue;
+
+      td {
+        border: 1px solid $blue;
+        color: $blue;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24.03px;
+
+        &:first-child {
+          text-align: left;
+          border-left: none;
+          color: #583b5d;
+          color: $purple;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24.03px;
+          padding: 20px 46px;
+
+          @include tablets {
+            width: 500px;
+            padding-right: 100px;
+            display: inline-block;
+          }
+
+          @include normal {
+            display: inline-block;
+            width: 500px;
+          }
+
+          @include phones {
+            display: inline-block;
+            width: 280px;
+            padding: 10px;
+            font-size: 13px;
+          }
+        }
+
+        &:nth-child(2) {
+          width: 250px;
+
+          @include tablets {
+            padding: 0px 66px;
+          }
+
+          @include normal {
+            padding: 0px 66px;
+            width: 100%;
+          }
+
+          @include phones {
+            padding: 0px 40px;
+            width: 100%;
+          }
+        }
+
+        &:nth-child(3) {
+          width: 250px;
+
+          @include tablets {
+            padding: 0px 46px;
+          }
+
+          @include normal {
+            padding: 0px 46px;
+            width: 100%;
+          }
+
+          @include phones {
+            padding: 0px 20px;
+            width: 100%;
+          }
+        }
+
+        &:nth-child(4) {
+          width: 250px;
+
+          @include tablets {
+            padding: 0px 46px;
+          }
+
+          @include normal {
+            padding: 0px 46px;
+            width: 100%;
+          }
+
+          @include phones {
+            padding: 0px 20px;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    thead {
+      th {
+        &:nth-child(1) {
+          position: relative;
+
+          @include phones {
+            &::after {
+              content: '\2190     \00a0\00a0\00a0\00a0   \2192 ';
+              color: $purple;
+              display: flex;
+              align-items: center;
+              font-size: 40px;
+              width: 100%;
+              justify-content: space-around
+            }
+          }
+
+          @include tablets {
+            &::after {
+              content: '\2190     \00a0\00a0\00a0\00a0   \2192 ';
+              color: $purple;
+              display: flex;
+              align-items: center;
+              font-size: 40px;
+              width: 100%;
+              justify-content: space-around
+            }
+          }
+
+          @include normal {
+            &::after {
+              content: '\2190     \00a0\00a0\00a0\00a0   \2192 ';
+              color: $purple;
+              display: flex;
+              align-items: center;
+              font-size: 40px;
+              width: 100%;
+              justify-content: space-around
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 24.03px;
+          color: $purple;
+          border-radius: 33px 33px 0 0;
+          background-color: $yellow;
+          padding: 24px 0 9px 0;
+
+          @include phones {
+            font-size: 17px;
+            padding: 10px;
+
+          }
+        }
+
+        &:nth-child(3) {
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 24.03px;
+          color: $yellow;
+          border-radius: 33px 33px 0 0;
+          background-color: $purple;
+          padding: 24px 0 9px 0;
+
+          @include phones {
+            font-size: 17px;
+            padding: 10px;
+          }
+        }
+
+        &:nth-child(4) {
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 24.03px;
+          color: #fff;
+          border-radius: 33px 33px 0 0;
+          background-color: $blue;
+          padding: 24px 0 9px 0;
+
+          @include phones {
+            font-size: 17px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    tfoot {
+
+      th {
+
+        &:nth-child(1) {
+          position: relative;
+
+          img {
+            display: none;
+          }
+
+          @include tablets {
+            img {
+              display: block;
+              position: absolute;
+              left: 10%;
+              top: 20px;
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+
+          @include normal {
+            img {
+              display: block;
+              position: absolute;
+              left: 10%;
+              top: 20px;
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+
+          @include phones {
+            img {
+              display: block;
+              position: absolute;
+              left: 10%;
+              top: 20px;
+              max-width: 80%;
+              max-height: 100%;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 24.03px;
+          color: $purple;
+          border-radius: 0 0 33px 33px;
+          background-color: $yellow;
+          padding: 20px 0px;
+
+          @include tablets {
+            font-size: 20px;
+          }
+
+          @include phones {
+            font-size: 17px;
+            padding: 10px;
+          }
+        }
+
+        &:nth-child(3) {
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 24.03px;
+          color: $yellow;
+          border-radius: 0 0 33px 33px;
+          background-color: $purple;
+          padding: 20px 0px;
+
+          @include tablets {
+            font-size: 20px;
+          }
+
+          @include phones {
+            font-size: 17px;
+            padding: 10px;
+          }
+        }
+
+        &:nth-child(4) {
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 24.03px;
+          color: #fff;
+          border-radius: 0 0 33px 33px;
+          background-color: $blue;
+          padding: 20px 0px;
+
+          @include tablets {
+            font-size: 20px;
+          }
+
+          @include phones {
+            font-size: 17px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

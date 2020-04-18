@@ -1,0 +1,12 @@
+-var img = ['./img/work-1.jpg', './img/work-2.jpg', './img/work-3.jpg', './img/work-4.jpg', './img/work-5.jpg', './img/work-5.jpg', './img/work-7.jpg', './img/work-8.jpg', './img/work-1.jpg']
+
+section.works#works
+	.container
+		-for(var i= 0; i < img.length; i++)
+			.works-blok
+				a(href= img[i])
+					img(src= img[i], alt="our works")
+					.overlay
+						.overlay-caption
+							h5.h5 Project Name
+							p Website Design

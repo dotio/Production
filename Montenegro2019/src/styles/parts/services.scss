@@ -1,0 +1,82 @@
+.services {
+  padding: 5rem 0;
+  text-align: center;
+  h6 {
+    text-transform: capitalize;
+  }
+  .container {
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    @include phones {
+      width: 100vw;
+      grid-template-columns: 1fr;
+    }
+    @include landscape {
+      width: 100vw;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.service {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  @include phones {
+    flex-direction: column;
+  }
+  @include landscape {
+    flex-direction: column;
+  }
+  .tab {
+    width: 100%;
+    box-shadow: $lightShadow;
+    background: linear-gradient(#ece9e6, #fff);
+    transition: $mainTransition;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    @include phones {
+      margin-left: 0;
+    }
+    @include landscape {
+      margin-left: 0;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: $darkShadow;
+    }
+  }
+  span {
+    display: inline-block;
+    color: $primaryColor;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.tabPanel {
+  p {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+
+// @media screen and (min-width: 992px) {
+//   .services-center {
+//     width: 95vw;
+//     max-width: 1170px;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .services p {
+//     width: 100%;
+//   }
+// }

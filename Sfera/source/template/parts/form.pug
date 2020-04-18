@@ -1,0 +1,24 @@
+section.form.py#form
+	.container
+		h3 Как с нами <span class='rect-lg'>связаться</span> ?
+		form#form(method='POST' action='../mail/contact-form.php')
+			h5 Просто заполните форму и наш менеджер свяжется с вами.
+			.form-group
+				label(for='name') Ваше Имя
+				input(type="text" name='name' id="name" data-validation-length="min4" data-validation-error-msg="Имя должно быть больше 4 символов")
+			.form-group
+				label(for='email') Ваш E-mail
+				input(type="email" name='email' id="email" data-validation="email" data-validation-error-msg="Введите корректный E-mail")
+			.form-group
+				label(for='phone') Ваш Телефон
+				input(type="number" name='phone' id="phone" data-validation="number" data-validation-error-msg="Введите корректный номер")
+
+			button(type="submit").btn Отправить заявку
+
+			p Нажимая на кнопку, вы даете 
+				a(href="http://www.sfera-s.net/politic.pdf" target='_blank').agree согласие
+			p на обработку своих персональных данных.
+
+		
+
+			

@@ -1,0 +1,44 @@
+block variables
+include mixins
+
+doctype html
+html(lang="ru")
+	head
+		title #{title}
+		meta(charset="utf-8")
+		meta(content="" name="author")
+		meta(content="" name="description")
+		meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
+		meta(name="HandheldFriendly" content="true")
+		meta(name="format-detection", content="telephone=no")
+		meta(content="IE=edge" http-equiv="X-UA-Compatible")
+		link(rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png")
+		link(rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png")
+		link(rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png")
+		link(rel="manifest" href="./favicon/site.webmanifest")
+		link(rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5")
+		meta(name="msapplication-TileColor" content="#da532c")
+		meta(name="theme-color" content="#ffffff")
+
+
+
+		
+		
+		link(rel="stylesheet", type="text/css" href="css/style.css")
+		
+		<!--[if lt IE 9]>
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+		<![endif]-->
+	body.page
+		
+		block content
+		block vendors
+			script(src="./module/jquery-3.3.1.min.js")
+			script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js")
+			
+
+		block scripts
+					
+			
+			script( src="js/bundle.min.js")
+

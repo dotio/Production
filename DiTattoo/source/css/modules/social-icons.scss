@@ -1,0 +1,45 @@
+.social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.social-item {
+		padding: 10px;
+		border: 1px solid $red;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: $red;
+		transition: all .55s ease;
+		animation: shine 1.5s ease-out 0s alternate infinite none running;
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			background: #fff;
+			animation-play-state: paused;
+
+			.social-link {
+				color: $red;
+			}
+		}
+	}
+
+	.social-link {
+		color: #fff;
+		font-size: 20px;
+	}
+}
+
+@keyframes shine {
+	0% {
+		box-shadow: 0px 0px 0px 5px rgba(212, 7, 24, 0.8);
+
+	}
+
+}

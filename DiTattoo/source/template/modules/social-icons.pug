@@ -1,0 +1,9 @@
+-var links = ['https://vk.com/id3737661', 'http://instagram.com/bondiana777', 'tel:+7(926)7773577']
+-var icon = ['i class="fab fa-vk"', 'i class="fab fa-instagram"', 'i class="fas fa-mobile-alt"']
+
+
+ul.social
+	-for(var i= 0; i < links.length; i++)
+		li.social-item
+			a(href= links[i] target='_blank').social-link
+				#{icon[i]}

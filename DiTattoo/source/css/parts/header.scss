@@ -1,0 +1,63 @@
+.showcase {
+	background: url('../img/bg.jpg') no-repeat center center/cover;
+	position: relative;
+
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: rgba(32, 39, 73, .7);
+		z-index: 1;
+	}
+
+	.container {
+		display: flex;
+		width: 100%;
+		min-height: 100vh;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.showcase-content {
+	z-index: 2;
+	background: rgba(32, 39, 73, .8);
+	padding: 20px;
+	border-radius: 5px;
+	margin: 250px 0 100px 0;
+
+
+	@include phones {
+		padding: 0px;
+		background: none;
+		z-index: 1;
+	}
+
+	@include landscape {
+
+		z-index: 1;
+	}
+
+	h1 {
+		margin-bottom: 20px;
+		color: #fff;
+
+		@include phones {
+			font-size: 18px;
+		}
+	}
+
+	p {
+		margin-bottom: 20px;
+		color: #fff;
+
+		@include phones {
+			font-size: 14px;
+			line-height: 1.6;
+
+		}
+
+
+	}
+}

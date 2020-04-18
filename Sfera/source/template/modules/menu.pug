@@ -1,0 +1,8 @@
+-var menu = ["Главная","О компании","Услуги", "Тарифные планы", "Контакты"]
+-var link = ['#main', '#about', '#service', '#price', '#contact']
+
+
+ul.menu-list
+	-for(var i= 0; i < menu.length; i++)
+		li.menu-item
+			a.menu-link(href= link[i])= menu[i]

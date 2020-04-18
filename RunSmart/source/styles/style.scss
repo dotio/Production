@@ -1,0 +1,24 @@
+@import 'main/_var';
+@import 'main/_font';
+@import 'main/_base';
+@import 'main/mixin';
+//libs
+@import 'libs/normalize';
+@import 'libs/slick';
+
+// blocks
+@import 'blocks/section-promo';
+@import 'blocks/section-advantage';
+@import 'blocks/section-form';
+@import 'blocks/section-slider';
+@import 'blocks/section-catalog';
+@import 'blocks/section-review';
+
+@import 'blocks/header';
+@import 'blocks/footer';
+
+// elements
+@import 'elements/button';
+@import 'elements/form';
+@import 'elements/modal';
+@import 'elements/upBtn';

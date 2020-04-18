@@ -1,0 +1,37 @@
+
+-
+	var content = [
+	{
+		img: './img/team-1.jpg',
+		name: 'Ruth Woods',
+		title: 'Founder, CEO',
+		},
+	{
+		img: './img/team-2.jpg',
+		name: 'Timothy Reed',
+		title: 'Co-Founder, Developer',
+		},
+	{
+		img: './img/team-3.jpg',
+		name: 'Victoria Valdez',
+		title: 'UI Designer',
+		},
+	{
+		img: './img/team-4.jpg',
+		name: 'Beverly Little',
+		title: 'Data Scientist',
+		}	
+
+	]
+section.team#team
+	.container
+		each val in content
+			.team-block
+				.team-block__imgWrap
+					img(src= val.img, alt= val.name)
+				h4.h4= val.name
+				h5.h5= val.title
+				p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi odit, vel aliquid aperiam, quo sapiente necessitatibus quidem quas eos, asperiores accusantium nam labore pariatur hic recusandae praesentium reiciendis ad neque?
+				include ../modules/social-icons
+
+

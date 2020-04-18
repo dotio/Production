@@ -1,0 +1,19 @@
+@import "system/_var";
+@import "system/_font";
+@import "system/_base";
+@import "system/mixin";
+
+@import "parts/header";
+@import "parts/nav";
+@import "parts/about";
+@import "parts/troubles";
+@import "parts/service";
+@import "parts/result";
+@import "parts/price";
+@import "parts/form";
+@import "parts/footer";
+
+
+@import "modules/button";
+@import "modules/menu";
+@import "modules/mobBtn";

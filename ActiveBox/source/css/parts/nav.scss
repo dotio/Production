@@ -1,0 +1,21 @@
+.navbar {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	padding: 40px 0;
+	border-bottom: 1px solid rgba($white, .15);
+	transition: padding .3s;
+
+	.container {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		justify-content: space-between;
+	}
+}
+
+.navbar.fixed {
+	background-color: darken($accent-color, 1%);
+	border-bottom: 0;
+	padding: 25px 0;
+}

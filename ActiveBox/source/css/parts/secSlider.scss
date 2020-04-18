@@ -1,0 +1,37 @@
+.secSlider {
+	width: 100%;
+}
+
+.slider {
+	position: relative;
+}
+
+.slider-content {
+	position: relative;
+	width: 100%;
+
+
+
+	img {
+		width: 100%;
+	}
+
+	blockquote {
+		position: absolute;
+		z-index: 99;
+		left: 0px;
+		bottom: 0;
+		background-color: #53354a;
+		padding: 20px;
+		width: 100%;
+		text-align: center;
+
+		@include phones {
+			display: none;
+		}
+
+		p {
+			color: #fff;
+		}
+	}
+}

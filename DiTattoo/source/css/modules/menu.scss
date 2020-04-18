@@ -1,0 +1,63 @@
+.menu-list {
+	display: flex;
+
+	@include phones {
+		visibility: hidden;
+		opacity: 0;
+		display: none;
+	}
+
+	@include landscape {
+		visibility: hidden;
+		opacity: 0;
+		display: none;
+	}
+}
+
+.menu-item {
+	padding: 0 1rem;
+
+
+	&:hover,
+	&:focus {
+		.menu-link {
+			color: $red;
+		}
+	}
+}
+
+.menu-link {
+	transition: all .55s ease;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.menu-list.open {
+	display: flex;
+	background: $dark-blue;
+	flex-direction: column;
+	position: absolute;
+	padding: 50px 0;
+	left: 0;
+	top: 120px;
+	width: 100%;
+	opacity: 0.9;
+	z-index: 9999;
+	text-align: center;
+	visibility: visible;
+	transition: opacity .5s ease;
+
+	@include landscape {
+		top: 150px;
+	}
+
+	.menu-item {
+		padding-left: 0;
+		padding: 20px 0;
+		margin: 0;
+	}
+
+	.menu-link {
+		font-size: 20px;
+	}
+}

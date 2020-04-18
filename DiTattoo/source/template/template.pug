@@ -1,0 +1,38 @@
+block variables
+include mixins
+
+doctype html
+html(lang="ru")
+	head
+		title #{title}
+		meta(charset="utf-8")
+		meta(content="Ruslan Koroteev" name="author")
+		meta(content="Перманентный макияж - татуаж по доступным ценам в Москве. Все виды техник нанесения, индивидуальный подход, качественные материалы! Di-Tattoo" name="description")
+		meta(name="keywords" content="перманентный макияж татуаж глаз губ бровей микроблейдинг юзао раменки")
+		meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
+		meta(name="HandheldFriendly" content="true")
+		meta(name="format-detection", content="telephone=no")
+		meta(content="IE=edge" http-equiv="X-UA-Compatible")
+
+		
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+		link(rel="stylesheet", href="./module/fotorama/fotorama.css")
+		link(rel="stylesheet", type="text/css" href="css/style.css")
+		
+		<!--[if lt IE 9]>
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+		<![endif]-->
+	body.page
+		
+		block content
+		block vendors
+			//- vendors libs
+			script(src="./module/jquery-3.3.1.min.js")
+			script(src="./module/fotorama/fotorama.js")
+			
+
+		block scripts
+					
+			
+			script( src="js/bundle.min.js")
+

@@ -1,0 +1,16 @@
+footer {
+	background-color: #313454;
+	padding: 50px 0;
+	text-align: center;
+	color: #999;
+
+	.fa-heart {
+		color: $brand-color;
+		margin: 0 5px;
+	}
+
+	.white {
+		color: $white;
+	}
+
+}

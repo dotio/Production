@@ -1,0 +1,69 @@
+footer {
+	padding-top: 64px;
+	padding-bottom: 45px;
+	background-color: #23203a;
+	color: #ffffff;
+}
+
+.footer-top {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
+	@include phones {
+		flex-direction: column;
+	}
+
+	h4 {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 29.95px;
+		text-transform: uppercase;
+		margin-bottom: 41px;
+
+		@include phones {
+			margin-bottom: 15px;
+		}
+	}
+
+	p {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 23.96px;
+	}
+
+	.contact {
+		display: flex;
+		flex-direction: column;
+
+		@include phones {
+			margin: 61px 0;
+		}
+
+		a {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 23.96px;
+			color: #fff;
+		}
+	}
+
+	.aboutUs {
+		a {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 23.96px;
+			color: #fff;
+		}
+
+		p {
+			&:nth-child(3) {
+				visibility: hidden;
+			}
+		}
+	}
+}
+
+.footer-bottom {
+	margin-top: 82px;
+}

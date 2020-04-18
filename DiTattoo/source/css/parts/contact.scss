@@ -1,0 +1,88 @@
+.contact {
+	background: $dark-blue;
+	padding: 50px 0;
+	color: #fff;
+}
+
+.contact-block {
+	display: flex;
+	width: 100%;
+
+	@include phones {
+		flex-direction: column;
+	}
+}
+
+.map {
+	display: flex;
+	flex-basis: 70%;
+
+	@include tablets {
+		flex-basis: 50%;
+	}
+
+	@include normal {
+		flex-basis: 50%;
+	}
+
+	@include phones {
+		flex-basis: 100%;
+	}
+
+	iframe {
+		width: 100%;
+	}
+
+}
+
+.bio {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 30%;
+	margin-left: 30px;
+
+	@include tablets {
+		flex-basis: 50%;
+		margin-left: 20px;
+	}
+
+	@include normal {
+		flex-basis: 50%;
+		margin-left: 20px;
+	}
+
+	@include phones {
+		flex-basis: 100%;
+		margin-top: 30px;
+		margin-left: 0;
+	}
+
+	a {
+		&:not(:first-child) {
+			padding-top: 30px;
+		}
+
+		color: #fff;
+		font-size: 17px;
+		transition: .55s color ease;
+
+		@include phones {
+
+			font-size: 14px;
+		}
+
+		&:hover,
+		&:focus {
+			&:not(:nth-child(3)) {
+				color: $red;
+			}
+
+			&:nth-child(3) {
+				cursor: none;
+			}
+		}
+
+
+	}
+
+}
